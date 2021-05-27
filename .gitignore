@@ -1,0 +1,11 @@
+cmake-build-debug
+cmake-build-debug-gnu
+cmake-build-debug-standart-macos-compiler
+cmake-build-release
+cmake-build-release-gnu
+cmake-build-release-standart-macos-compiler
+.idea
+
+**/.DSS_Store_Store
+**/*.a
+**/*.dylib

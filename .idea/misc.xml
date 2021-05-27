@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/include" />
+      <file path="$PROJECT_DIR$/src" />
+      <file path="$PROJECT_DIR$/tests/src" />
+    </sourceRoots>
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/cmake-build-debug" />
+      <file path="$PROJECT_DIR$/cmake-build-debug-gnu" />
+      <file path="$PROJECT_DIR$/cmake-build-debug-standart-macos-compiler" />
+      <file path="$PROJECT_DIR$/cmake-build-release" />
+      <file path="$PROJECT_DIR$/cmake-build-release-gnu" />
+      <file path="$PROJECT_DIR$/cmake-build-release-standart-macos-compiler" />
+      <file path="$PROJECT_DIR$/deps" />
+      <file path="$PROJECT_DIR$/tests/deps" />
+    </excludeRoots>
+  </component>
+</project>
