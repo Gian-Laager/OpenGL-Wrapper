@@ -1,16 +1,55 @@
-#ifndef OPENGL_WRAPPER_PCH_H
-#define OPENGL_WRAPPER_PCH_H
+#pragma once
 
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include <glm/common.hpp>
+////open gl error handling
+#define glCall(x) GLErrorHandling::clearError();\
+    x;\
+    assert(GLErrorHandling::logCall(#x, __FILE__, __LINE__))
 
+namespace glwrp
+{
+    namespace GLErrorHandling
+    {
+        void clearError();
+
+        bool logCall(const char* function, const char* file, int line);
+    }
+
+////Destroyer
+    struct Destroyer
+    {
+        ~Destroyer();
+    };
+}
+
+////macros
+#define glAbs_Init() auto destructor = glAbs::init();\
+
+
+////including dependencies
+#include "GL/glew.h"
+#include "GLFW/glfw3.h"
+//#include "stb_image.h"
+//glm
+#include "glm/glm.hpp"
+#include "glm/gtx/string_cast.hpp"
+#include "glm/gtc/type_ptr.hpp"
+
+////including standard library
 #include <iostream>
-#include <memory>
-#include <utility>
-#include <vector>
 #include <sstream>
-#include <unordered_map>
-#include <algorithm>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <cstddef>
 
-#endif //OPENGL_WRAPPER_PCH_H
+#define _USE_MATH_DEFINES
+
+#include <math.h>
+#include <algorithm>
+#include <iterator>
+#include <vector>
+#include <set>
+#include <array>
+#include <future>
+#include <memory>
+#include <map>

@@ -1,5 +1,4 @@
-#ifndef OPENGL_WRAPPER_WINDOW_H
-#define OPENGL_WRAPPER_WINDOW_H
+#pragma once
 
 #include "glwrp/pch.h"
 
@@ -56,4 +55,3 @@ namespace glwrp
     };
 }
 
-#endif //OPENGL_WRAPPER_WINDOW_H

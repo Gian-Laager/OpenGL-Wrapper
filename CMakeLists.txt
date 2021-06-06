@@ -10,12 +10,30 @@ include(FetchContent)
 
 #LIBRARY
 set(SRC
-		"src/glwrp/glwrp.cpp"
-		src/glwrp/Window.cpp src/glwrp/VertexBuffer.cpp)
+		src/glwrp/Buffer.cpp
+		src/glwrp/IndexBuffer.cpp
+		src/glwrp/Renderer.cpp
+		src/glwrp/Shader.cpp
+#		src/glwrp/Texture.cpp
+		src/glwrp/VertexArray.cpp
+		src/glwrp/VertexBuffer.cpp
+		src/glwrp/VertexBufferLayout.cpp
+		src/glwrp/Window.cpp
+		src/glwrp/glwrp.cpp
+		)
 set(HEAD
-		"include/glwrp/glwrp.h"
-		"include/glwrp/pch.h"
-		include/glwrp/Window.h include/glwrp/VertexBuffer.h)
+		include/glwrp/Buffer.h
+		include/glwrp/IndexBuffer.h
+		include/glwrp/Renderer.h
+		include/glwrp/Shader.h
+#		include/glwrp/Texture.h
+		include/glwrp/VertexArray.h
+		include/glwrp/VertexBuffer.h
+		include/glwrp/VertexBufferLayout.h
+		include/glwrp/Window.h
+		include/glwrp/glwrp.h
+		include/glwrp/pch.h
+		)
 
 FetchContent_Declare(
 		glfw

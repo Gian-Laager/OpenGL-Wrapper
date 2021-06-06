@@ -4,12 +4,13 @@
 
 namespace glwrp
 {
-    class VertexBuffer : public Buffer
+    class IndexBuffer : public Buffer
     {
     public:
         static unsigned int boundId;
+        int numberOfVertices;
 
-        VertexBuffer();
+        IndexBuffer(int numberOfVertices);
 
         void bind() const override;
 
