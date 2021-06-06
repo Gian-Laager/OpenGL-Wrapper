@@ -24,5 +24,6 @@ TEST(Window, BasicWindow)
 int main()
 {
     testing::InitGoogleTest();
+    std::cout << "binding: " << GL_ARRAY_BUFFER_BINDING << ", buffer: " << GL_ARRAY_BUFFER << std::endl;
     return RUN_ALL_TESTS();
 }

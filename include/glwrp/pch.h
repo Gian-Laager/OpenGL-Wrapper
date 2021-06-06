@@ -10,5 +10,7 @@
 #include <utility>
 #include <vector>
 #include <sstream>
+#include <unordered_map>
+#include <algorithm>
 
 #endif //OPENGL_WRAPPER_PCH_H
