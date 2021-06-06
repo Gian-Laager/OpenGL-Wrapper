@@ -11,11 +11,11 @@ include(FetchContent)
 #LIBRARY
 set(SRC
 		"src/glwrp/glwrp.cpp"
-		src/glwrp/Window.cpp)
+		src/glwrp/Window.cpp src/glwrp/VertexBuffer.cpp)
 set(HEAD
 		"include/glwrp/glwrp.h"
 		"include/glwrp/pch.h"
-		include/glwrp/Window.h)
+		include/glwrp/Window.h include/glwrp/VertexBuffer.h)
 
 FetchContent_Declare(
 		glfw
