@@ -10,12 +10,12 @@ include(FetchContent)
 
 #LIBRARY
 set(SRC
-		"src/glw/glw.cpp"
-		)
+		"src/glwrp/glwrp.cpp"
+		src/glwrp/Window.cpp)
 set(HEAD
-		"include/glw/glw.h"
-		"include/glw/pch.h"
-		)
+		"include/glwrp/glwrp.h"
+		"include/glwrp/pch.h"
+		include/glwrp/Window.h)
 
 FetchContent_Declare(
 		glfw
@@ -45,7 +45,7 @@ add_library(${PROJECT_NAME} STATIC ${SRC} ${HEAD})
 set_target_properties(${PROJECT_NAME} PROPERTIES DEBUG_POSTFIX _d)
 target_link_libraries(${PROJECT_NAME} PUBLIC "glfw" "glew" "glm" OpenGL::GL)
 include_directories(glfw ${GLEW_INCLUDE_DIRECTORIES} "glm" "include/")
-target_precompile_headers(${PROJECT_NAME} PUBLIC include/glw/pch.h)
+target_precompile_headers(${PROJECT_NAME} PUBLIC include/glwrp/pch.h)
 
 #TESTS
 FetchContent_Declare(

@@ -6,5 +6,9 @@
 #include <glm/common.hpp>
 
 #include <iostream>
+#include <memory>
+#include <utility>
+#include <vector>
+#include <sstream>
 
 #endif //OPENGL_WRAPPER_PCH_H
