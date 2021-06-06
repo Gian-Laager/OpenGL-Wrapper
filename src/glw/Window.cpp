@@ -1,12 +1,13 @@
 #include "glw/Window.h"
 
 std::shared_ptr<GLFWwindow> glw::Window::boundWindow = nullptr;
+glw::Window glw::Window::mainWindow{};
 
 glw::Window::Window(int width, int height, const std::string& title, GLFWmonitor* monitor, GLFWwindow* share)
 {
     glfwWindow = createWindow(width, height, title, monitor, share);
     if (glfwWindow == nullptr)
-        throw new GlfwException("Failed to initialize window.");
+        throw GlfwException("Failed to initialize window.");
 }
 
 std::shared_ptr<GLFWwindow>
@@ -57,7 +58,3 @@ void glw::Window::pollEvents()
     glfwPollEvents();
 }
 
-void glw::Window::errorCallback(int error, const char* message)
-{
-    std::cerr << "glfw error, code: " << error << ", message: " << message << std::endl;
-}

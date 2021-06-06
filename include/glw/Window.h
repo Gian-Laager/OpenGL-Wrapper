@@ -8,8 +8,18 @@ namespace glw
     class Window
     {
     public:
+        struct Hint
+        {
+            int hint;
+            int value;
+        };
+
+        static Window mainWindow;
+
         Window(int width, int height, const std::string& title, GLFWmonitor* monitor = nullptr,
                GLFWwindow* share = nullptr);
+
+        Window() = default;
 
         void bind();
 
@@ -31,8 +41,6 @@ namespace glw
         static std::shared_ptr<GLFWwindow>
         createWindow(int width, int height, const std::string& title, GLFWmonitor* monitor = nullptr,
                      GLFWwindow* share = nullptr);
-
-        static void errorCallback(int error, const char* message);
 
     public:
         class GlfwException : public std::exception
