@@ -1,9 +1,9 @@
 #ifndef OPENGL_WRAPPER_WINDOW_H
 #define OPENGL_WRAPPER_WINDOW_H
 
-#include "glw/pch.h"
+#include "glwrp/pch.h"
 
-namespace glw
+namespace glwrp
 {
     class Window
     {

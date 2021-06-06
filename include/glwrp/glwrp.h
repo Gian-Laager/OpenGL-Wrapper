@@ -1,10 +1,10 @@
-#ifndef OPENGL_WRAPPER_GLW_H
-#define OPENGL_WRAPPER_GLW_H
+#ifndef OPENGL_WRAPPER_GLWRP_H
+#define OPENGL_WRAPPER_GLWRP_H
 
 #include "pch.h"
 #include "Window.h"
 
-namespace glw
+namespace glwrp
 {
     void init(int windowWidth, int windowHeight,
               const std::string& windowTitle,
@@ -23,4 +23,4 @@ namespace glw
     };
 }
 
-#endif //OPENGL_WRAPPER_GLW_H
+#endif //OPENGL_WRAPPER_GLWRP_H
