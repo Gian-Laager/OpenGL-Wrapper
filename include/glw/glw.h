@@ -2,6 +2,7 @@
 #define OPENGL_WRAPPER_GLW_H
 
 #include "pch.h"
+#include "Window.h"
 
 bool hello();
 

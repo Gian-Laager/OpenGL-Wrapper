@@ -11,11 +11,11 @@ include(FetchContent)
 #LIBRARY
 set(SRC
 		"src/glw/glw.cpp"
-		)
+		src/glw/Window.cpp)
 set(HEAD
 		"include/glw/glw.h"
 		"include/glw/pch.h"
-		)
+		include/glw/Window.h)
 
 FetchContent_Declare(
 		glfw
